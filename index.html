@@ -1,68 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApolIonian</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apollonian</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <h2>ApolIonian</h2>
-            <nav>
-                <ul>
-                    <li>🏠 Home</li>
-                    <li class="active">✏️ Posts</li>
-                    <li>👥 Mentors</li>
-                    <li>💬 Chat</li>
-                    <li>👤 Profile</li>
-                </ul>
-            </nav>
-        </aside>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Apollonian</h2>
+      <ul>
+        <li>🏠 Home</li>
+        <li class="active">🖊️ Posts</li>
+        <li>👥 Mentors</li>
+        <li>💬 Chat</li>
+        <li>👤 Profile</li>
+      </ul>
+    </aside>
 
-        <main class="content">
-            <div class="community-header">
-                <button class="join-btn">+ Join a new Community</button>
-                <div class="community-list">
-                    <div class="community">Mindful Living Community</div>
-                    <div class="community">Anxiety Support Circle</div>
-                </div>
-            </div>
-            <div class="posts">
-                <div class="post">
-                    <h3>🧘 Mindfulness & Meditation</h3>
-                    <p>Welcome to our mindfulness community! Today we'll explore techniques for managing anxiety and stress.</p>
-                    <button class="join-btn">+ Join</button>
-                </div>
-                <div class="post">
-                    <h3>😌 Anxiety Support</h3>
-                    <p>Daily Anxiety Tip: Start your day with 5 minutes of deep breathing. Inhale for 4 counts, hold for 4, exhale for 4.</p>
-                    <button class="join-btn">+ Join</button>
-                </div>
-                <div class="post">
-                    <h3>🌿 Mental Wellness</h3>
-                    <p>Question of the day: What's one small thing you're grateful for today?</p>
-                    <button class="join-btn">+ Join</button>
-                </div>
-            </div>
-        </main>
+    <!-- Main Content Area as its Own Section -->
+    <main class="content">
+      <section class="main-content">
+        <!-- Community List: The join button is now a box similar to the others -->
+        <div class="community-list">
+          <div class="community join-community">
+            <button class="join-btn">+ Join a new Community</button>
+          </div>
+          <div class="community">
+            🧘 Mindful Living Community <span>(2341) | 14h left</span>
+          </div>
+          <div class="community">
+            😌 Anxiety Support Circle <span>(1567) | 14h left</span>
+          </div>
+        </div>
 
-        <aside class="right-sidebar">
-            <h3>Suggested AI Mentors</h3>
-            <div class="mentor">
-                <h4>🧘 Mindfulness & Meditation</h4>
-                <button class="join-btn">Join</button>
+        <!-- Posts Section -->
+        <section class="posts">
+          <article class="post">
+            <div class="post-header">
+              <span>🧘 Mindfulness & Meditation</span>
+              <button class="join-btn">+ Join</button>
             </div>
-            <div class="mentor">
-                <h4>😌 Anxiety Support</h4>
-                <button class="join-btn">Join</button>
+            <p>Welcome to our mindfulness community! Today we'll explore techniques for managing anxiety and stress.</p>
+            <div class="post-footer">
+              <span>#meditation #mindfulness</span>
+              <button>15 Comments</button>
+              <button>Save</button>
+              <button>Share</button>
             </div>
-            <div class="mentor">
-                <h4>🌿 Mental Wellness</h4>
-                <button class="join-btn">Join</button>
+          </article>
+
+          <article class="post">
+            <div class="post-header">
+              <span>😌 Anxiety Support</span>
+              <button class="join-btn">+ Join</button>
             </div>
-        </aside>
-    </div>
+            <p>🌞 Daily Anxiety Tip: Start your day with 5 minutes of deep breathing...</p>
+            <div class="post-footer">
+              <span>#anxiety #breathing</span>
+              <button>23 Comments</button>
+              <button>Save</button>
+              <button>Share</button>
+            </div>
+          </article>
+
+          <article class="post">
+            <div class="post-header">
+              <span>🌿 Mental Wellness</span>
+              <button class="join-btn">+ Join</button>
+            </div>
+            <p>💭 Question of the day: What's one small thing you're grateful for today?</p>
+            <div class="post-footer">
+              <span>#gratitude</span>
+              <button>15 Comments</button>
+              <button>Save</button>
+              <button>Share</button>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <aside class="right-sidebar">
+      <h3>Suggested AI Mentors</h3>
+      <div class="mentor">
+        <h4>🧘 Mindfulness & Meditation</h4>
+        <p>A space for sharing mindfulness practices and meditation experiences</p>
+        <button class="join-btn">Join</button>
+      </div>
+      <div class="mentor">
+        <h4>😌 Anxiety Support</h4>
+        <p>Supporting each other through anxiety and stress management</p>
+        <button class="join-btn">Join</button>
+      </div>
+      <div class="mentor">
+        <h4>🌿 Mental Wellness</h4>
+        <p>Discussing mental health, wellness, and personal growth</p>
+        <button class="join-btn">Join</button>
+      </div>
+    </aside>
+  </div>
 </body>
 </html>
